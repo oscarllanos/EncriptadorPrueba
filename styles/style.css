@@ -1,0 +1,208 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-color: #F3F5FC;
+    box-sizing: border-box;
+    height: 100vh;
+}
+
+.encriptador{
+    display: flex;
+    padding: 40px 40px 0px 40px;
+    height: 100%;
+    align-items: center;
+    justify-content: space-between;
+    gap: 5%;
+}
+
+.encriptador_logo {
+    align-self: flex-start;
+    width: 120px;
+    height: 48px;
+}
+
+.encriptador_entrada {
+    display: flex;
+    flex-direction: column;
+    align-self: flex-start;
+    justify-content: center;
+    width: 60%;
+    height: 87%;
+}
+
+.encriptador_entrada_texto {
+    background-color: #F3F5FC;
+    width: 85%;
+    height: 77%;
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    font-size: 2rem;
+    color: #0A3871;
+    border: none;
+}
+
+.encriptador_entrada_consejo {
+    display: flex;
+}
+
+.encriptador_entrada_consejo_texto{
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    font-size: 0.75rem;
+    color: #495057;
+}
+
+.encriptador_entrada_botones{
+    display: flex;
+    gap: 24px;
+}
+
+.encriptador_boton {
+    width: 328px;
+    height: 67px;
+    border-radius: 18px;
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+    background-color: #D8DFE8;
+    color:#0A3871;
+    margin-bottom: 46px;
+}
+
+.encriptador_boton:hover {
+    cursor: pointer;
+    background-color:#0A3871;
+    color: #FFFFFF;
+}
+
+.encriptador_salida {
+    background-color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    align-self: flex-start;
+    width: 35%;
+    height: 87%;
+    border-radius: 32px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.encriptador_salida_texto {
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    font-size: 1.5rem;
+    color: #495057;
+    margin: 16px 16px 0 16px;
+    text-align: left;
+}
+
+.encriptador_salida_muñeco {
+    width: 336px;
+    height: 304px;
+    margin-bottom: 32px;
+}
+
+.encriptador_salida_primer_mensaje {
+    font-family: "Inter", sans-serif;
+    font-weight: 700;
+    font-size: 1.5rem;
+    color: #343A40;
+    text-align: center;
+}
+
+.encriptador_salida_segundo_mensaje {
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+    color: #495057;
+    text-align: center;
+    margin-bottom: 32px;
+}
+
+.footer {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 600;
+    font-family: "Inter", sans-serif;
+    background-color: #0A3871;
+    color: #FFFFFF;
+}
+
+@media only screen and (min-width: 400px) and (max-width: 1000px) {
+    .encriptador{
+        flex-direction: column;
+        padding-left: 10%;
+    }
+
+    .encriptador_entrada {
+        width: 95%;
+    }
+
+    .encriptador_salida {
+        width: 95%;
+        height: fit-content;
+    }
+
+    .encriptador_salida_muñeco{
+        display: none;
+    }
+
+    .encriptador_salida_texto {
+        font-size: 2rem;
+    }
+
+    .encriptador_boton {
+        width: 90%;
+    }
+
+    .footer {
+        font-size: 1.5rem;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .encriptador{
+        flex-direction: column;
+        padding-left: 10%;
+        justify-content: flex-start;
+    }
+
+    .encriptador_entrada {
+        width: 95%;
+    }
+
+    .encriptador_entrada_botones {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .encriptador_boton {
+        margin: 0%;
+    }
+
+    .encriptador_salida {
+        width: 95%;
+        height: fit-content;
+    }
+
+    .encriptador_salida_muñeco{
+        display: none;
+    }
+
+    .encriptador_salida_texto {
+        font-size: 2rem;
+    }
+
+    .encriptador_boton {
+        width: 90%;
+    }
+
+    .footer{
+        font-size: 1rem;
+    }
+}

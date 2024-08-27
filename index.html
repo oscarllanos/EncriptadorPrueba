@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador de Texto</title>
+    <link rel="stylesheet" href="./styles/style.css">
+</head>
+<body>
+    <header>
+    </header>
+    <main class="encriptador">
+        <img class="encriptador_logo" src="./assets/Logo.png" alt="Logo de Alura">
+        <section class="encriptador_entrada">
+            <textarea id="texto" class="encriptador_entrada_texto" placeholder="Ingrese el texto aquí"></textarea>
+            <div class="encriptador_entrada_consejo">
+                <img src="./assets/Group.png">
+                <h1 class="encriptador_entrada_consejo_texto" >Solo letras minúsculas y sin acentos</h1>
+            </div>
+            <div class="encriptador_entrada_botones">
+                <button onclick="encriptar();" class="encriptador_boton" >Encriptar</button>
+                <button onclick="desencriptar();" class="encriptador_boton" >Desencriptar</button>
+            </div>
+        </section>
+        <section class="encriptador_salida">
+            <p class="encriptador_salida_texto" id="salidaTexto" ></p>
+            <img class="encriptador_salida_muñeco" id="muneco" src="./assets/Muñeco.png">
+            <h2 class="encriptador_salida_primer_mensaje" id="primerMensaje">Ningún mensaje fue encontrado</h2>
+            <h3 class="encriptador_salida_segundo_mensaje" id="segundoMensaje">Ingresa el texto que desees encriptar o desencriptar.</h3>
+            <button onclick="copiar();" class="encriptador_boton" id="botonCopiar" hidden >Copiar</button>
+        </section>
+    </main>
+    <footer class="footer">
+        <p>Desarrollado por Oscar Llanos. 2024</p>
+    </footer>
+
+    <script src="app.js" defer></script>
+</body>
+</html>
